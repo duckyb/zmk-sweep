@@ -8,6 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define BASE 0
+#define EXT 1
+#define SYM 2
+#define FNC 3
+
 
 &mt {
   //  flavor = "tap-preferred";
@@ -67,7 +72,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
 		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp RET
-          				&mo 2 &kp LSHIFT  				&kp SPACE &mo 1 
+          				&mo EXT &kp LSHIFT  				&kp SPACE &mo SYM 
 		>;
 		};
 
@@ -76,7 +81,7 @@
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 		&kp NON_US_BSLH &kp LS(N5) &kp LS(N8) &kp S(RA(LBRC)) &kp RA(LBRC) 		&kp LS(N0) &kp LS(MINUS)  &kp MINUS &kp RBKT  &kp LS(RBKT) 
 		&kp LS(NON_US_BSLH)    &kp LS(N4) 	&kp LS(N9) &kp LS(RA(RBRC))  &kp RA(RBRC) 	&kp RA(SEMI) &kp LS(N1) &kp LS(N2) &kp SLASH  &kp LS(N7)
-					    &mo 3  &trans  					&trans &trans 
+					    &mo FNC  &trans  					&trans &trans 
 		>;
 		};
 		
@@ -85,11 +90,11 @@
 		&kp ESC  &trans &trans  &trans  &trans    			&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 		&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
 		&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)    			&kp LC(BSPC) &kp BSPC &trans &trans  &trans
-					  &mo 3 &kp LCTRL  				&kp ENTER  &mo 2 
+					  &trans &kp LCTRL  				&kp ENTER  &mo FNC 
 		>;
 		};
 
-       		function_layer {
+       		fnc_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
@@ -97,15 +102,6 @@
           				&mo 2 &kp LSHIFT  				&kp SPACE &mo 1 
 		>;
 		};
-		
-		tri_layer {
-		bindings = <
-		&kp N1  &kp N2    &kp N3    &kp N4    &kp N5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
-		>;
-		};	
         
 	};
 };
