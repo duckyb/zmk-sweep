@@ -29,10 +29,10 @@
             timeout-ms = <50>;
             key-positions = <33 34>;
             bindings = <&mo ACCENT>;
-        }
+        };
     };
 
-        keymap {
+    keymap {
             compatible = "zmk,keymap";
                 
        		default_layer {
