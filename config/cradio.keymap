@@ -65,33 +65,42 @@
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp RET
-          				&mo 2 &kp LSFT  				&kp SPC &mo 1 
+		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
+		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp RET
+          				&mo 2 &kp LSHIFT  				&kp SPACE &mo 1 
 		>;
 		};
 
-       		left_layer {
+       		sym_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp NON_US_BSLH    &kp LS(NUM_5)    &kp LS(NUM_8)      &kp LBRC     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp RBRC  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+		&kp NON_US_BSLH &kp LS(N5) &kp LS(N8) &kp S(RA(LBRC)) &kp RA(LBRC) 		&kp LS(N0) &kp LS(MINUS)  &kp MINUS &kp RBKT  &kp LS(RBKT) 
+		&kp LS(NON_US_BSLH)    &kp LS(N4) 	&kp LS(N9) &kp LS(RA(RBRC))  &kp RA(RBRC) 	&kp RA(SEMI) &kp LS(N1) &kp LS(N2) &kp SLASH  &kp LS(N7)
+					    &mo 3  &trans  					&trans &trans 
 		>;
 		};
 		
-		right_layer {
+		ext_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&sk LALT &sk LGUI  &sk LSFT  &sk LCTL  &kp RALT 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		&kp ESC  &trans &trans  &trans  &trans    			&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
+		&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
+		&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)    			&kp LC(BSPC) &kp BSPC &trans &trans  &trans
+					  &mo 3 &kp LCTRL  				&kp ENTER  &mo 2 
 		>;
-		};	
+		};
+
+       		function_layer {
+		bindings = <
+		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
+		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
+		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp RET
+          				&mo 2 &kp LSHIFT  				&kp SPACE &mo 1 
+		>;
+		};
 		
 		tri_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
+		&kp N1  &kp N2    &kp N3    &kp N4    &kp N5 			&trans &trans   &trans   &trans  &trans
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					 &trans &trans  					&trans &trans 
