@@ -9,9 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define EXT 1
-#define SYM 2
+#define SYM 1
+#define EXT 2
 #define FNC 3
+#define SYM2 4
+#define ACCENT 5
 
 
 &mt {
@@ -23,45 +25,11 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_accent {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-        
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-        
-                    combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-        
-                           combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-        
-        
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
-        
-
-        
+            key-positions = <33 34>;
+            bindings = <&mo ACCENT>;
+        }
     };
 
         keymap {
@@ -96,10 +64,28 @@
 
        		fnc_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
-		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp RET
-          				&mo 2 &kp LSHIFT  				&kp SPACE &mo 1 
+		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
+		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
+		&trans &trans &trans &trans &trans				    &trans &trans  &trans &trans &trans
+          				           &trans &trans      &trans &trans 
+		>;
+		};
+
+       		symbols_2_layer {
+		bindings = <
+		&trans &kp LS(SLASH) &kp LS(N3) &kp RA(E) &kp RA(APOS)                  &trans &trans &trans &trans &trans 
+		&kp RA(MINUS) &kp RA(EQUAL) &kp GRAVE &kp LS(GRAVE) &kp LS(N6)          &trans &trans &trans &trans &trans
+		&trans &trans &trans &trans &trans				                        &trans &trans &trans &trans &trans
+          				           &trans &trans                           &trans &trans 
+		>;
+		};
+
+       		accent_layer {
+		bindings = <
+		&trans &trans &trans &kc RA(LS(E)) &trans          &trans &trans &trans &trans &trans 
+		&kc APOS &kc EQUAL &kc SEMI &kc LBRC &kc LC(LBRC)          &trans &trans &trans &trans &trans
+		&trans &trans &trans &kc NON_US_HASH &trans			&trans &trans &trans &trans &trans
+          				     &trans &trans          &trans &trans 
 		>;
 		};
         
