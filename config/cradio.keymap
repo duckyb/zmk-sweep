@@ -39,10 +39,10 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SEMI
-		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp NON_US_HASH
-          				&mo EXT &mt LSHIFT SPACE  	  &kp SPACE &sl SYM
+		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
+		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp SEMI
+		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp NON_US_HASH
+             &mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
 		>;
 		};
 
@@ -50,19 +50,19 @@
        		sym_layer {
 		bindings = <
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&kp NON_US_BSLH &kp LS(N5) &kp LS(N8) &kp LS(RA(LBKT)) &kp RA(LBKT) 		&kp LS(N0) &kp LS(MINUS)  &kp MINUS &kp RBKT  &kp LS(RBKT) 
-		&kp LS(NON_US_BSLH)    &kp LS(N4) 	&kp LS(N9) &kp LS(RA(RBKT))  &kp RA(RBKT) 	&kp RA(SEMI) &kp LS(N1) &kp LS(N2) &kp SLASH  &kp LS(N7)
-					    &mo FNC  &mo SYM2  					&trans &trans 
+		&kp NON_US_BSLH &kp LS(N5) &kp LS(N8) &kp LS(RA(LBKT)) &kp RA(LBKT) 		&kp LS(N0) &kp LS(MINUS)  &kp MINUS &kp RBKT &kp LS(RBKT) 
+		&kp LS(NON_US_BSLH) &kp LS(N4) &kp LS(N9) &kp LS(RA(RBKT)) &kp RA(RBKT) 	&kp RA(SEMI) &kp LS(N1) &kp LS(N2) &kp SLASH &kp LS(N7)
+					                                        &mo FNC  &mo SYM2       &trans &trans
 		>;
 		};
 		
         // Main modifiers and arrow keys
 		    ext_layer {
 		bindings = <
-		&kp ESC  &trans &trans  &trans  &trans    			&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
+		&kp ESC  &trans &trans  &trans  &trans    			        &kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 		&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
-		&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)    			&kp LC(BSPC) &kp BSPC &trans &trans  &trans
-					  &trans &kp LCTRL  				&kp ENTER  &mo FNC 
+		&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
+					                        &trans &kp LCTRL    &kp ENTER  &mo FNC 
 		>;
 		};
 
@@ -89,10 +89,10 @@
         // Used to type regional accents.
        		accent_layer {
 		bindings = <
-		&none &none &none &kp RA(LS(E)) &none          &none &none &none &none &none 
+		&none &none &none &kp RA(LS(E)) &none                      &none &none &none &none &none 
 		&kp APOS &kp EQUAL &kp SEMI &kp LBRC &kp LC(LBRC)          &none &none &none &none &none
-		&none &none &none &kp NON_US_HASH &none			&none &none &none &none &none
-          				     &none &none          &none &none 
+		&none &none &none &kp NON_US_HASH &none                    &none &none &none &none &none
+          				     &none &none                        &none &none 
 		>;
 		};
         
