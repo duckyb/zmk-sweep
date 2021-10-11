@@ -26,7 +26,7 @@
     combos {
         compatible = "zmk,combos";
         combo_accent {
-            timeout-ms = <50>;
+            timeout-ms = <150>;
             key-positions = <33 34>;
             bindings = <&mo ACCENT>;
         };
@@ -40,7 +40,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
 		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp RET
-          				&mo EXT &kp LSHIFT  				&kp SPACE &mo SYM 
+          				&mo EXT &kp LSHIFT  				&kp SPACE &sl SYM
 		>;
 		};
 
@@ -49,7 +49,7 @@
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 		&kp NON_US_BSLH &kp LS(N5) &kp LS(N8) &kp LS(RA(LBRC)) &kp RA(LBRC) 		&kp LS(N0) &kp LS(MINUS)  &kp MINUS &kp RBKT  &kp LS(RBKT) 
 		&kp LS(NON_US_BSLH)    &kp LS(N4) 	&kp LS(N9) &kp LS(RA(RBRC))  &kp RA(RBRC) 	&kp RA(SEMI) &kp LS(N1) &kp LS(N2) &kp SLASH  &kp LS(N7)
-					    &mo FNC  &trans  					&trans &trans 
+					    &mo FNC  &mo SYM2  					&trans &trans 
 		>;
 		};
 		
