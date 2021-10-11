@@ -42,7 +42,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G                       &kp H &kp J  &kp K     &kp L &kp SQT
 		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp RET
-          				&mo EXT &kp LSHIFT  				&kp SPACE &sl SYM
+          				&mo EXT &mt LSHIFT SPACE  	  &kp SPACE &sl SYM
 		>;
 		};
 
@@ -71,8 +71,8 @@
 		bindings = <
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-		&trans &trans &trans &trans &trans				    &trans &trans  &trans &trans &trans
-          				           &trans &trans      &trans &trans 
+		&bt BT_CLR &trans &trans &bt BT_PRV				    &bt BT_NXT &trans  &trans &trans &trans
+          				           &none &none         &none &none  
 		>;
 		};
 
