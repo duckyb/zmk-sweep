@@ -90,7 +90,7 @@
        		accent_layer {
 		bindings = <
 		&none &none &none &kp RA(LS(E)) &none                      &none &none &none &none &none 
-		&kp APOS &kp EQUAL &kp SEMI &kp LBKT &kp LC(LBKT)          &none &none &none &none &none
+		&kp APOS &kp EQUAL &kp SEMI &kp LBKT &kp LS(LBKT)          &none &none &none &none &none
 		&none &none &none &kp NON_US_HASH &none                    &none &none &none &none &none
           				     &none &none                        &none &none 
 		>;
