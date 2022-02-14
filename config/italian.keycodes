@@ -27,7 +27,7 @@
 #define IT_HASH RA(APOS)         // #
 #define IT_BKTK RA(MINUS)        // `
 #define IT_TILDE RA(EQUAL)       // ~
-#define IT_BSLH GRAVE            // \  
+#define IT_BSLH GRAVE            // backslash
 #define IT_AND LS(N6)            // &
 #define IT_PIPE LS(GRAVE)        // |
 #define IT_CEGR RA(LS(E))        // È
