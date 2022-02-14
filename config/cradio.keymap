@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "italian.keycodes"
 
 // Layer definitions
     #define BASE 0
@@ -40,8 +41,8 @@
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp SEMI
-		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp NON_US_HASH
+		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
+		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
              &mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
 		>;
 		};
@@ -50,8 +51,8 @@
        		sym_layer {
 		bindings = <
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&kp NON_US_BSLH &kp LS(N5) &kp LS(N8) &kp LS(RA(LBKT)) &kp RA(LBKT) 		&kp LS(N0) &kp LS(MINUS)  &kp MINUS &kp RBKT &kp LS(RBKT) 
-		&kp LS(NON_US_BSLH) &kp LS(N4) &kp LS(N9) &kp LS(RA(RBKT)) &kp RA(RBKT) 	&kp RA(SEMI) &kp LS(N1) &kp LS(N2) &kp SLASH &kp LS(N7)
+		&kp IT_LESS &kp IT_PERC &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
+		&kp IT_GREAT &kp IT_USD &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
 					                                        &mo FNC  &mo SYM2       &trans &trans
 		>;
 		};
@@ -79,8 +80,8 @@
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-		&kp LS(EQUAL) &kp LS(SLASH) &kp LS(N3) &kp RA(E) &kp RA(APOS)              &none &none &none &none &none 
-		&kp RA(MINUS) &kp RA(EQUAL) &kp GRAVE &kp LS(GRAVE) &kp LS(N6)         &none &none &none &none &none
+		&kp IT_CARET &kp IT_UNDER &kp IT_PND &kp IT_EUR &kp IT_HASH              &none &none &none &none &none 
+		&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
 		&none &none &none &none &none				                           &none &none &none &none &none
           				           &none &none                           &none &none 
 		>;
@@ -89,10 +90,10 @@
         // Used to type regional accents.
        		accent_layer {
 		bindings = <
-		&none &none &none &kp RA(LS(E)) &none                      &none &none &none &none &none 
-		&kp APOS &kp EQUAL &kp SEMI &kp LBKT &kp LS(LBKT)          &none &none &none &none &none
-		&none &none &none &kp NON_US_HASH &none                    &none &none &none &none &none
-          				     &none &none                        &none &none 
+		&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
+		&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
+		&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
+          				     &none &none                         &none &none 
 		>;
 		};
         
