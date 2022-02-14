@@ -79,7 +79,7 @@
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-		&none &kp LS(SLASH) &kp LS(N3) &kp RA(E) &kp RA(APOS)                  &none &none &none &none &none 
+		&kp CARET &kp LS(SLASH) &kp LS(N3) &kp RA(E) &kp RA(APOS)              &none &none &none &none &none 
 		&kp RA(MINUS) &kp RA(EQUAL) &kp GRAVE &kp LS(GRAVE) &kp LS(N6)         &none &none &none &none &none
 		&none &none &none &none &none				                           &none &none &none &none &none
           				           &none &none                           &none &none 
