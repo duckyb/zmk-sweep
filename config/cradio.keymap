@@ -25,7 +25,7 @@
 
 &sk {
     ignore-modifiers;
-}
+};
 
 / {
 
