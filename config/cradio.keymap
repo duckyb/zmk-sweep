@@ -23,6 +23,10 @@
    // tapping_term_ms = <200>;
 };
 
+&sk {
+    ignore-modifiers;
+}
+
 / {
 
     combos {
