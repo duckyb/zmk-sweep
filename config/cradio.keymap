@@ -16,15 +16,6 @@
     #define SYM2 4
 // -----------------
 
-&mt {
-   //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
-};
-
-&sk {
-    ignore-modifiers;
-};
-
 / {
 
     behaviors {
@@ -37,9 +28,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-	
-	&lt
-    };
+    };	
 
     keymap {
             compatible = "zmk,keymap";
