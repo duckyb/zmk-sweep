@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "italian.keycodes"
 
 // Layer definitions
     #define BASE 0
@@ -15,7 +14,6 @@
     #define EXT 2
     #define FNC 3
     #define SYM2 4
-    #define ACCENT 5
 // -----------------
 
 &mt {
@@ -29,13 +27,18 @@
 
 / {
 
-    combos {
-        compatible = "zmk,combos";
-        combo_accent {
-            timeout-ms = <300>;
-            key-positions = <32 33>;
-            bindings = <&mo ACCENT>;
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
+	
+	&lt
     };
 
     keymap {
@@ -44,10 +47,10 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
-		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
-             &mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
+		&kp Q &kp W &kp F &kp P &kp B                                 &kp J &kp L  &kp U  &kp Y   &kp GRAVE 
+		&mt LCMD A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G           &kp M &hm RSHFT N &hm RCTRL E &hm RALT I &hm RCMD O
+		&kp Z &kp X &kp C &kp D &kp V                                 &kp K &kp H  &kp LA(APOS) &kp LA(O) &kp LA(A)
+                                &lt EXT SPACE &lt FNC TAB                  &lt SYM2 ENTER &lt SYM BACKSPACE
 		>;
 		};
 
@@ -90,16 +93,5 @@
           				           &none &none                           &none &none 
 		>;
 		};
-
-        // Used to type regional accents.
-       		accent_layer {
-		bindings = <
-		&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
-		&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
-		&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
-          				     &none &none                         &none &none 
-		>;
-		};
-        
 	};
 };
