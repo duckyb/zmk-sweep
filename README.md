@@ -1,1 +1,1 @@
-![sweep-layout](https://user-images.githubusercontent.com/301539/166214264-a033045c-acd1-4e13-a2e4-2035a9150dc9.svg)
+![sweep-layout(1)](https://user-images.githubusercontent.com/301539/166228291-23dc1956-dbcb-4f59-b366-cbeb8108752d.svg)
