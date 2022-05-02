@@ -58,10 +58,10 @@
        		sym_layer {
 		bindings = <
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&mt LCMD IT_LESS &mt LALT IT_PERC &mt LCTRL IT_LPAR &mt LSHFT IT_LBRC &kp IT_LBKT  &kp IT_EQL &hm RSHFT IT_QUES &hm RCTRL IT_SQUOT &hm RALT IT_MINUS &hm RCMD IT_AST
-		&kp IT_GREAT &kp IT_USD &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT  	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
-                                &lt EXT SPACE &lt FNC TAB                  &lt SYM2 ENTER &lt SYM BACKSPACE
-		>;
+		&mt LCMD IT_LESS &mt LALT IT_PERC &mt LCTRL IT_LPAR &mt LSHFT IT_LBRC &kp IT_LBKT   &kp IT_EQL &hm RSHFT IT_QUES &hm RCTRL IT_SQUOT &hm RALT IT_MINUS &hm RCMD IT_AST
+		&kp IT_GREAT &kp IT_USD &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT  	                    &kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
+                                &lt EXT SPACE &lt FNC TAB                               &lt SYM2 ENTER &lt SYM BACKSPACE
+		>; 
 		};
 
         // Main modifiers and arrow keys
@@ -79,18 +79,18 @@
 		bindings = <
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-		&bt BT_CLR &none &none &none &bt BT_SEL 0				    &bt BT_SEL 1 &none &none &none &bootloader 
-                                &lt EXT SPACE &lt FNC TAB                  &lt SYM2 ENTER &lt SYM BACKSPACE
+		&bt BT_CLR &none &none &none &bt BT_SEL 0           &bt BT_SEL 1 &none &none &none &bootloader 
+                                &lt EXT SPACE &lt FNC TAB      &lt SYM2 ENTER &lt SYM BACKSPACE
 		>;
 		};
 
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-		&kp CARET &kp UNDER &none &none &kp HASH              &none &kp COLON &kp SEMICOLON &none &none 
-		&kp GRAVE &kp TILDE &kp BSLH &kp PIPE &kp AMPS         &none &kp KP_DOT &kp KP_COMMA &none &none
-		&none &none &none &none &none				                           &none &none &none &none &none
-                                &lt EXT SPACE &lt FNC TAB                  &lt SYM2 ENTER &lt SYM BACKSPACE
+		&kp CARET &kp UNDER &none &none &kp HASH              	&none &kp COLON &kp SEMICOLON &none &none 
+		&kp GRAVE &kp TILDE &kp BSLH &kp PIPE &kp AMPS          &none &kp KP_DOT &kp KP_COMMA &none &none
+		&none &none &none &none &none				&none &none &none &none &none
+                                &lt EXT SPACE &lt FNC TAB        &lt SYM2 ENTER &lt SYM BACKSPACE
 		>;
 		};
 	};
