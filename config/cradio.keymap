@@ -35,7 +35,7 @@
 		bindings = <
 			&kp N1		&kp N2		&kp N3		&kp N4		&kp N5										&kp J &kp L &kp U  				&kp Y			&kp BACKSPACE
 			&kp LCMD	&kp LALT	&kp LCTRL &kp LSHFT &mo LSYM									&kp M &kp N &kp E 				&kp I 		&kp O
-			&kp none	&kp HASH	&kp CARET &kp GRAVE &kp TAB										&kp K &kp H &kp LA(APOS) 	&kp LA(O) &kp LA(A)
+			&none			&kp HASH	&kp CARET &kp GRAVE &kp TAB										&kp K &kp H &kp LA(APOS) 	&kp LA(O) &kp LA(A)
                                		 					&none  &mo LMOD						&kp DOT &kp COLON
 		>; 
 		};
