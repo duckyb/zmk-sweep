@@ -23,50 +23,50 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-			&kp Q &kp W &kp F &kp P &kp B                           &kp J &kp L  &kp U  &kp Y   &kp BACKSPACE
-			&kp A &kp R &kp S &kp T &kp G				&kp M &kp N &kp E &kp I &kp O
-			&kp Z &kp X &kp C &kp D &kp V                           &kp K &kp H  &kp LA(APOS) &kp LA(O) &kp LA(A)
-                               		 &kp SPACE &mo LM  		&mo RM &kp SPACE
+			&kp Q &kp W &kp F &kp P &kp B						&kp J &kp L &kp U					&kp Y			&kp BACKSPACE
+			&kp A &kp R &kp S &kp T &kp G						&kp M &kp N &kp E					&kp I			&kp O
+			&kp Z &kp X &kp C &kp D &kp V						&kp K &kp H &kp LA(APOS)	&kp LA(O) &kp LA(A)
+                    &kp SPACE &mo LM  		&mo RM &kp SPACE
 		>;
 		};
 
         // Left mod layer
-       		sym_layer {
+       		left_mod {
 		bindings = <
-			&kp N1 &kp N2 &kp N3 &kp N4 &kp 5                       &kp J &kp L  &kp U  &kp Y   &kp BACKSPACE
-			&kp LCMD &kp LALT &kp LCTRL &kp LSHFT &mo LS		&kp M &kp N &kp E &kp I &kp O
-			&kp none &kp HASH &kp CARET &kp GRAVE &kp TAB           &kp K &kp H  &kp LA(APOS) &kp LA(O) &kp LA(A)
-                               		 &none  &mo LM   		&kp DOT &kp COLON
+			&kp N1		&kp N2		&kp N3		&kp N4		&kp N5										&kp J &kp L &kp U  				&kp Y			&kp BACKSPACE
+			&kp LCMD	&kp LALT	&kp LCTRL &kp LSHFT &mo LS										&kp M &kp N &kp E 				&kp I 		&kp O
+			&kp none	&kp HASH	&kp CARET &kp GRAVE &kp TAB										&kp K &kp H &kp LA(APOS) 	&kp LA(O) &kp LA(A)
+                               		 					&none  &mo LM						&kp DOT &kp COLON
 		>; 
 		};
 
         // Right mod layer
-		    ext_layer {
+		    right_mod {
 		bindings = <
-			&kp Q &kp W &kp F &kp P &kp B				&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp A &kp R &kp S &kp T &kp G				&mo RS &kp RSHFT &kp RCTRL &kp RALT &kp RCMD
-			&kp Z &kp X &kp C &kp D &kp V                           &none &kp UNDER &kp TILDE &kp BSLH &kp PIPE
-                               		 &kp COMMA &kp SEMI  		&mo RM &none
+			&kp Q &kp W &kp F &kp P &kp B								&kp N6	&kp N7		&kp N8 		&kp N9 		&kp N0
+			&kp A &kp R &kp S &kp T &kp G								&mo RS	&kp RSHFT &kp RCTRL &kp RALT	&kp RCMD
+			&kp Z &kp X &kp C &kp D &kp V								&none		&kp UNDER &kp TILDE &kp BSLH	&kp PIPE
+											&kp COMMA &kp SEMI  		&mo RM &none
 		>;
 		};
 
         // Left Sybbol layer
-       		fnc_layer {
+       		Left_sym {
 		bindings = <
-			&kp ESC &kp PG_UP &kp F &kp P &kp B				&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp C_BRI_UP &none &kp S &kp T &mo LS				&mo RS &kp RSHFT &kp RCTRL &kp RALT &kp RCMD
-			&kp C_BRI_DN &kp PG_DN &kp C &kp D &kp V                        &none &kp UNDER &kp TILDE &kp BSLH &kp PIPE
-                               		 &none  &mo LM   			&none &none
+			&kp ESC 			&kp PG_UP &kp C_VOL_UP &kp C_NEXT &none												&kp F6 		&kp F7 		&kp F8 		&kp F9		&kp F10
+			&kp C_BRI_UP	&none 		&kp K_MUTE	 &kp C_PP 	&mo LS											&kp EQUAL &kp QMARK &kp SQT		&kp PLUS 	&kp ASTRK
+			&kp C_BRI_DN	&kp PG_DN &kp C_VOL_DN &kp C_NEXT &none												&kp AT 		&kp EXCL 	&kp DQT		&kp MINUS &kp FSLH
+                            							   		 &none  &mo LM								&none &none
 		>;
 		};
 
         // Right symbol layer
-       		symbols_2_layer {
+       		Right_sym {
 		bindings = <
-		&kp CARET &kp UNDER &none &none &kp HASH              	&none &kp COLON &kp SEMICOLON &none &none 
-		&kp GRAVE &kp TILDE &kp BSLH &kp PIPE &kp AMPS          &none &kp DOT &kp COMMA &none &none
-		&none &none &none &none &none				&none &none &none &none &none
-                                &lt EXT SPACE &lt FNC TAB        &lt SYM2 ENTER &lt SYM BACKSPACE
+			&kp F1 	&kp F2		&kp F3		&kp F4		&kp F5									&none		&kp HOME		&kp UP 			&kp END 	&kp CAPS
+			&kp LT	&kp PRCNT	&kp LPAR 	&kp LBRC 	&kp LBKT								&mo RS	&kp LEFT 		&kp DOWN 		&kp RIGHT	&kp DEL
+			&kp GT	&kp DLLR	&kp RPAR 	&kp RBRC 	&kp RBKT								&none		&none 			&kp F11 		&kp F12		&none
+											&none &none  																&mo RM &none
 		>;
 		};
 	};
