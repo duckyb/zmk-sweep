@@ -10,10 +10,10 @@
 
 // Layer definitions
     #define BASE 0
-    #define LM 1
-    #define RM 2
-    #define LS 3
-    #define RS 4
+    #define LMOD 1
+    #define RMOD 2
+    #define LSYM 3
+    #define RSYM 4
 // -----------------
 
 / {
@@ -26,7 +26,7 @@
 			&kp Q &kp W &kp F &kp P &kp B						&kp J &kp L &kp U					&kp Y			&kp BACKSPACE
 			&kp A &kp R &kp S &kp T &kp G						&kp M &kp N &kp E					&kp I			&kp O
 			&kp Z &kp X &kp C &kp D &kp V						&kp K &kp H &kp LA(APOS)	&kp LA(O) &kp LA(A)
-                    &kp SPACE &mo LM  		&mo RM &kp SPACE
+                    &kp SPACE &mo LMOD  		&mo RMOD &kp SPACE
 		>;
 		};
 
@@ -34,19 +34,19 @@
        		left_mod {
 		bindings = <
 			&kp N1		&kp N2		&kp N3		&kp N4		&kp N5										&kp J &kp L &kp U  				&kp Y			&kp BACKSPACE
-			&kp LCMD	&kp LALT	&kp LCTRL &kp LSHFT &mo LS										&kp M &kp N &kp E 				&kp I 		&kp O
+			&kp LCMD	&kp LALT	&kp LCTRL &kp LSHFT &mo LSYM									&kp M &kp N &kp E 				&kp I 		&kp O
 			&kp none	&kp HASH	&kp CARET &kp GRAVE &kp TAB										&kp K &kp H &kp LA(APOS) 	&kp LA(O) &kp LA(A)
-                               		 					&none  &mo LM						&kp DOT &kp COLON
+                               		 					&none  &mo LMOD						&kp DOT &kp COLON
 		>; 
 		};
 
         // Right mod layer
 		    right_mod {
 		bindings = <
-			&kp Q &kp W &kp F &kp P &kp B								&kp N6	&kp N7		&kp N8 		&kp N9 		&kp N0
-			&kp A &kp R &kp S &kp T &kp G								&mo RS	&kp RSHFT &kp RCTRL &kp RALT	&kp RCMD
-			&kp Z &kp X &kp C &kp D &kp V								&none		&kp UNDER &kp TILDE &kp BSLH	&kp PIPE
-											&kp COMMA &kp SEMI  		&mo RM &none
+			&kp Q &kp W &kp F &kp P &kp B								&kp N6		&kp N7		&kp N8 		&kp N9 		&kp N0
+			&kp A &kp R &kp S &kp T &kp G								&mo RSYM	&kp RSHFT &kp RCTRL &kp RALT	&kp RCMD
+			&kp Z &kp X &kp C &kp D &kp V								&none			&kp UNDER &kp TILDE &kp BSLH	&kp PIPE
+											&kp COMMA &kp SEMI  		&mo RMOD &none
 		>;
 		};
 
@@ -54,9 +54,9 @@
        		Left_sym {
 		bindings = <
 			&kp ESC 			&kp PG_UP &kp C_VOL_UP &kp C_NEXT &none												&kp F6 		&kp F7 		&kp F8 		&kp F9		&kp F10
-			&kp C_BRI_UP	&none 		&kp K_MUTE	 &kp C_PP 	&mo LS											&kp EQUAL &kp QMARK &kp SQT		&kp PLUS 	&kp ASTRK
+			&kp C_BRI_UP	&none 		&kp K_MUTE	 &kp C_PP 	&mo LSYM										&kp EQUAL &kp QMARK &kp SQT		&kp PLUS 	&kp ASTRK
 			&kp C_BRI_DN	&kp PG_DN &kp C_VOL_DN &kp C_NEXT &none												&kp AT 		&kp EXCL 	&kp DQT		&kp MINUS &kp FSLH
-                            							   		 &none  &mo LM								&none &none
+                            							   		 &none  &mo LMOD							&none &none
 		>;
 		};
 
@@ -64,9 +64,9 @@
        		Right_sym {
 		bindings = <
 			&kp F1 	&kp F2		&kp F3		&kp F4		&kp F5									&none		&kp HOME		&kp UP 			&kp END 	&kp CAPS
-			&kp LT	&kp PRCNT	&kp LPAR 	&kp LBRC 	&kp LBKT								&mo RS	&kp LEFT 		&kp DOWN 		&kp RIGHT	&kp DEL
+			&kp LT	&kp PRCNT	&kp LPAR 	&kp LBRC 	&kp LBKT								&mo RSYM	&kp LEFT 		&kp DOWN 		&kp RIGHT	&kp DEL
 			&kp GT	&kp DLLR	&kp RPAR 	&kp RBRC 	&kp RBKT								&none		&none 			&kp F11 		&kp F12		&none
-											&none &none  																&mo RM &none
+											&none &none  																&mo RMOD &none
 		>;
 		};
 	};
