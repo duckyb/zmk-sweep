@@ -10,70 +10,57 @@
 
 // Layer definitions
     #define BASE 0
-    #define SYM 1
-    #define EXT 2
-    #define FNC 3
-    #define SYM2 4
+    #define LM 1
+    #define RM 2
+    #define LS 3
+    #define RS 4
 // -----------------
 
 / {
-
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };	
-
     keymap {
             compatible = "zmk,keymap";
 
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B                                 &kp J &kp L  &kp U  &kp Y   &kp GRAVE 
-		&mt LCMD A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G           &kp M &hm RSHFT N &hm RCTRL E &hm RALT I &hm RCMD O
-		&kp Z &kp X &kp C &kp D &kp V                                 &kp K &kp H  &kp LA(APOS) &kp LA(O) &kp LA(A)
-                                &lt EXT SPACE &lt FNC TAB                  &lt SYM2 ENTER &lt SYM BACKSPACE
+			&kp Q &kp W &kp F &kp P &kp B                           &kp J &kp L  &kp U  &kp Y   &kp BACKSPACE
+			&kp A &kp R &kp S &kp T &kp G				&kp M &kp N &kp E &kp I &kp O
+			&kp Z &kp X &kp C &kp D &kp V                           &kp K &kp H  &kp LA(APOS) &kp LA(O) &kp LA(A)
+                               		 &kp SPACE &mo LM  		&mo RM &kp SPACE
 		>;
 		};
 
-        // Numbers and high frequency symbols
+        // Left mod layer
        		sym_layer {
 		bindings = <
-		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&mt LCMD LT &mt LALT PRCNT &mt LCTRL LPAR &mt LSHFT LBRC &kp LBKT   &kp KP_EQUAL &hm RSHFT QMARK &hm RCTRL SQT &hm RALT KP_MINUS &hm RCMD KP_ASTERISK
-		&kp GT &kp DLLR &kp RPAR &kp RBRC &kp RBKT  	                       &kp AT       &kp EXCL        &kp DQT       &kp KP_PLUS       &kp KP_SLASH
-                                &lt EXT SPACE &lt FNC TAB                   &lt SYM2 ENTER &lt SYM BACKSPACE
+			&kp N1 &kp N2 &kp N3 &kp N4 &kp 5                       &kp J &kp L  &kp U  &kp Y   &kp BACKSPACE
+			&kp LCMD &kp LALT &kp LCTRL &kp LSHFT &mo LS		&kp M &kp N &kp E &kp I &kp O
+			&kp none &kp HASH &kp CARET &kp GRAVE &kp TAB           &kp K &kp H  &kp LA(APOS) &kp LA(O) &kp LA(A)
+                               		 &none  &mo LM   		&kp DOT &kp COLON
 		>; 
 		};
 
-        // Main modifiers and arrow keys
+        // Right mod layer
 		    ext_layer {
 		bindings = <
-		&kp ESC  &none &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    			                &kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
-		&kp C_BRI_DN &kp C_BRI_UP &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT 	&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-		&none  &none &none &none  &none                                        &none &kp BSPC &none &none  &none
-                                &lt EXT SPACE &lt FNC TAB                  &lt SYM2 ENTER &lt SYM BACKSPACE
+			&kp Q &kp W &kp F &kp P &kp B				&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+			&kp A &kp R &kp S &kp T &kp G				&mo RS &kp RSHFT &kp RCTRL &kp RALT &kp RCMD
+			&kp Z &kp X &kp C &kp D &kp V                           &none &kp UNDER &kp TILDE &kp BSLH &kp PIPE
+                               		 &kp COMMA &kp SEMI  		&mo RM &none
 		>;
 		};
 
-        // Function keys with modifiers
+        // Left Sybbol layer
        		fnc_layer {
 		bindings = <
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
-		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-		&none &none &none &none &none                       &none &none &none &none &none 
-                                &lt EXT SPACE &lt FNC TAB      &lt SYM2 ENTER &lt SYM BACKSPACE
+			&kp ESC &kp PG_UP &kp F &kp P &kp B				&kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+			&kp C_BRI_UP &none &kp S &kp T &mo LS				&mo RS &kp RSHFT &kp RCTRL &kp RALT &kp RCMD
+			&kp C_BRI_DN &kp PG_DN &kp C &kp D &kp V                        &none &kp UNDER &kp TILDE &kp BSLH &kp PIPE
+                               		 &none  &mo LM   			&none &none
 		>;
 		};
 
-        // Low frequency symbols.
+        // Right symbol layer
        		symbols_2_layer {
 		bindings = <
 		&kp CARET &kp UNDER &none &none &kp HASH              	&none &kp COLON &kp SEMICOLON &none &none 
