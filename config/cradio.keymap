@@ -26,7 +26,7 @@
 			&kp Q &kp W &kp F &kp P &kp B						&kp J &kp L &kp U					&kp Y			&kp BACKSPACE
 			&kp A &kp R &kp S &kp T &kp G						&kp M &kp N &kp E					&kp I			&kp O
 			&kp Z &kp X &kp C &kp D &kp V						&kp K &kp H &kp LA(APOS)	&kp LA(O) &kp LA(A)
-                    &kp SPACE &mo LMOD  		&mo RMOD &kp SPACE
+                    &kp SPACE &mo LMOD  		&mo RMOD &kp ENTER
 		>;
 		};
 
