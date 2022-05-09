@@ -31,11 +31,18 @@
 
     combos {
         compatible = "zmk,combos";
+	// combo into accent layer
         combo_accent {
             timeout-ms = <300>;
             key-positions = <32 33>;
             bindings = <&mo ACCENT>;
         };
+	// combo into sym2 layer
+	combo_sym2 {
+	    timeout-ms = <200>;
+	    key-positions = <31 33>;
+	    bindings = <&mo SYM2>
+	};
     };
 
     keymap {
