@@ -41,7 +41,7 @@
 	combo_sym2 {
 	    timeout-ms = <200>;
 	    key-positions = <31 33>;
-	    bindings = <&mo SYM2>
+	    bindings = <&mo SYM2>;
 	};
     };
 
