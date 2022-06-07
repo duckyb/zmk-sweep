@@ -16,6 +16,7 @@
     #define FNC 3
     #define SYM2 4
     #define ACCENT 5
+		#define SETTINGS 6
 // -----------------
 
 &mt {
@@ -28,21 +29,45 @@
 };
 
 / {
+		macros {
+				// sometimes my device thinks a modifier is being held down
+				// pressing all modifiers fixes it.
+				unstick: unstick {
+					label = "ZM_unstick";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings
+						= <&kp LSHIFT>
+						, <&kp RSHIFT>
+						, <&kp LCTRL>
+						, <&kp RCTRL>
+						, <&kp LALT>
+						, <&kp RALT>
+						, <&kp LGUI>
+						, <&kp RGUI>;
+				};
+		};
 
     combos {
         compatible = "zmk,combos";
-	// combo into accent layer
+				// both right thumb keys
         combo_accent {
             timeout-ms = <300>;
             key-positions = <32 33>;
             bindings = <&mo ACCENT>;
         };
-	// combo into sym2 layer
-	combo_sym2 {
-	    timeout-ms = <200>;
-	    key-positions = <31 33>;
-	    bindings = <&mo SYM2>;
-	};
+				// internal-left & external-right thumb keys
+				combo_sym2 {
+						timeout-ms = <200>;
+						key-positions = <31 33>;
+						bindings = <&mo SYM2>;
+				};
+				// both left thumb keys
+				combo_settings {
+						timeout-ms = <300>;
+						key-positions = <30 31>;
+						bindings = <&mo SETTINGS>;
+				};
     };
 
     keymap {
@@ -83,8 +108,8 @@
 		bindings = <
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-		&bt BT_CLR &none &none &none &bt BT_SEL 0				    &bt BT_SEL 1 &none &none &none &bootloader 
-          				           &none &none         &none &none  
+		&none &none &none &none &none				          &none &none &none &none &bootloader 
+          				           &none &none              &none &none  
 		>;
 		};
 
@@ -104,6 +129,16 @@
 		&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
 		&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
 		&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
+          				     &none &none                         &none &none 
+		>;
+		};
+
+        // Used to change the keyboard's settings.
+       		settings_layer {
+		bindings = <
+		&reset &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &reset 
+		&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
+		&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
           				     &none &none                         &none &none 
 		>;
 		};
