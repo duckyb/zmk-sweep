@@ -1,6 +1,6 @@
 <div align="center">
 
-  ![sweep-layout](https://user-images.githubusercontent.com/27895007/153905240-56eaac36-95c7-453a-8f19-c860974b635d.svg)
+  ![sweep-layout](https://user-images.githubusercontent.com/27895007/174397568-b78af93f-28b6-4ea4-b2d0-c477770dc663.svg)
 
 </div>
 
