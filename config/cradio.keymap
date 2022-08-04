@@ -10,11 +10,48 @@
 
 // Layer definitions
     #define BASE 0
-    #define LMOD 1
-    #define RMOD 2
-    #define LSYM 3
-    #define RSYM 4
+    #define MOD 1
+    #define LSYM 2
+    #define RSYM 3
+    #define SETTINGS 4
 // -----------------
+
+
+&sk {
+    ignore-modifiers;
+};
+
+combos {
+        compatible = "zmk,combos";
+
+		// both right thumb keys
+        combo_rsym {
+            timeout-ms = <300>;
+            key-positions = <32 33>;
+            bindings = <&mo RSYM>;
+        };
+			
+		// both left thumb keys
+		combo_lsym {
+			timeout-ms = <300>;
+			key-positions = <30 31>;
+			bindings = <&mo LSYM>;
+		};
+
+		// both internal thumb keys
+		combo_mod {
+			timeout-ms = <300>;
+			key-positions = <31 32>;
+			bindings = <&mo MOD>;
+		};
+
+		// all thumb keys
+		combo_settings {
+			timeout-ms = <300>;
+			key-positions = <30 31 32 33>;
+			bindings = <&mo SETTINGS>;
+		};
+    };
 
 / {
     keymap {
@@ -23,50 +60,49 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-			&kp Q &kp W &kp F &kp P &kp B						&kp J &kp L &kp U					&kp Y			&kp BACKSPACE
-			&kp A &kp R &kp S &kp T &kp G						&kp M &kp N &kp E					&kp I			&kp O
-			&kp Z &kp X &kp C &kp D &kp V						&kp K &kp H &kp LA(APOS)	&kp LA(O) &kp LA(A)
-                    &kp SPACE &mo LMOD  		&mo RMOD &kp ENTER
+			&kp Q &kp W &kp F &kp P &kp B						&kp J &kp L &kp U			&kp Y		&kp BACKSPACE
+			&kp A &kp R &kp S &kp T &kp G						&kp M &kp N &kp E			&kp I		&kp O
+			&kp Z &kp X &kp C &kp D &kp V						&kp K &kp H &kp LA(APOS)	&kp LA(O) 	&kp LA(A)
+                    			&kp SPACE &kp COMMA  		&kp DOT &kp ENTER
 		>;
 		};
 
-        // Left mod layer
+        //mod layer
        		left_mod {
 		bindings = <
-			&kp N1		&kp N2		&kp N3		&kp N4		&kp N5										&kp J &kp L &kp U  				&kp Y			&kp BACKSPACE
-			&kp LCMD	&kp LALT	&kp LCTRL &kp LSHFT &mo LSYM									&kp M &kp N &kp E 				&kp I 		&kp O
-			&none			&kp HASH	&kp CARET &kp GRAVE &kp TAB										&kp K &kp H &kp LA(APOS) 	&kp LA(O) &kp LA(A)
-                               		 					&none  &mo LMOD						&kp DOT &kp COLON
+			&kp N1		&kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp N7		&kp N8 		&kp N9 		&kp N0
+			&sk LCMD	&sk LALT	&sk LCTRL 	&sk LSHFT  	&none						&kp COLON	&sk RSHFT 	&sk RCTRL 	&sk RALT	&sk RCMD
+			&none		&kp HASH	&kp CARET 	&kp GRAVE 	&kp TAB						&kp SEMI	&kp UNDER 	&kp TILDE 	&kp BSLH	&kp PIPE
+                               		 					&none  &none				&none &none
 		>; 
-		};
-
-        // Right mod layer
-		    right_mod {
-		bindings = <
-			&kp Q &kp W &kp F &kp P &kp B								&kp N6		&kp N7		&kp N8 		&kp N9 		&kp N0
-			&kp A &kp R &kp S &kp T &kp G								&mo RSYM	&kp RSHFT &kp RCTRL &kp RALT	&kp RCMD
-			&kp Z &kp X &kp C &kp D &kp V								&none			&kp UNDER &kp TILDE &kp BSLH	&kp PIPE
-											&kp COMMA &kp SEMI  		&mo RMOD &none
-		>;
 		};
 
         // Left Sybbol layer
        		Left_sym {
 		bindings = <
-			&kp ESC 			&kp PG_UP &kp C_VOL_UP &kp C_NEXT &none												&kp F6 		&kp F7 		&kp F8 		&kp F9		&kp F10
-			&kp C_BRI_UP	&none 		&kp K_MUTE	 &kp C_PP 	&mo LSYM										&kp EQUAL &kp QMARK &kp SQT		&kp PLUS 	&kp ASTRK
-			&kp C_BRI_DN	&kp PG_DN &kp C_VOL_DN &kp C_NEXT &none												&kp AT 		&kp EXCL 	&kp DQT		&kp MINUS &kp FSLH
-                            							   		 &none  &mo LMOD							&none &none
+			&kp ESC 		&kp PG_UP 	&kp C_VOL_UP &kp C_NEXT &none					&kp F6 		&kp F7 		&kp F8 		&kp F9		&kp F10
+			&kp C_BRI_UP	&none 		&kp K_MUTE	 &kp C_PP 	&mo LSYM				&kp EQUAL 	&kp QMARK 	&kp SQT		&kp PLUS 	&kp ASTRK
+			&kp C_BRI_DN	&kp PG_DN 	&kp C_VOL_DN &kp C_NEXT &none					&kp AT 		&kp EXCL 	&kp DQT		&kp MINUS &kp FSLH
+                            							   		 &none  &none		&none &none
 		>;
 		};
 
         // Right symbol layer
        		Right_sym {
 		bindings = <
-			&kp F1 	&kp F2		&kp F3		&kp F4		&kp F5									&none		&kp HOME		&kp UP 			&kp END 	&kp CAPS
-			&kp LT	&kp PRCNT	&kp LPAR 	&kp LBRC 	&kp LBKT								&mo RSYM	&kp LEFT 		&kp DOWN 		&kp RIGHT	&kp DEL
-			&kp GT	&kp DLLR	&kp RPAR 	&kp RBRC 	&kp RBKT								&none		&none 			&kp F11 		&kp F12		&none
-											&none &none  																&mo RMOD &none
+			&kp F1 	&kp F2		&kp F3		&kp F4		&kp F5							&none		&kp HOME	&kp UP		&kp END 	&kp CAPS
+			&kp LT	&kp PRCNT	&kp LPAR 	&kp LBRC 	&kp LBKT						&mo RSYM	&kp LEFT 	&kp DOWN	&kp RIGHT	&kp DEL
+			&kp GT	&kp DLLR	&kp RPAR 	&kp RBRC 	&kp RBKT						&none		&none 		&kp F11 	&kp F12		&none
+														&none &none  				&none &none
+		>;
+
+		// Settings layer
+       		Right_sym {
+		bindings = <
+			&bootloader &none	&none 	&bt BT_CLR &bt BT_SEL 0               	&bt BT_SEL 3 &none &none &none &bootloader 
+			&none 		&none 	&none 	&none      &bt BT_SEL 2               	&bt BT_SEL 5 &none &none &none &none
+			&none 		&none	&none 	&none      &bt BT_SEL 1 				&bt BT_SEL 4 &none &none &none &none
+          				     							&none &none    	&none &none 
 		>;
 		};
 	};
