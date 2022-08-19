@@ -59,9 +59,9 @@
 #define IT_EACU LS(LBKT)         // é
 #define IT_AST LS(RBKT)          // *
 // Row 3
-#define IT_CCED S(SEMI)          // ç
-#define IT_DEG S(APOS)           // °
-#define IT_SECT S(NON_US_HASH)   // §
+#define IT_CCED LS(SEMI)         // ç
+#define IT_DEG LS(APOS)          // °
+#define IT_SECT LS(NON_US_HASH)  // §
 
 /* AltGr symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
