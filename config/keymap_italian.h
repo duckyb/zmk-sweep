@@ -24,9 +24,7 @@
 #define IT_UGRV NON_US_HASH      // ù
 // Row 4
 #define IT_LESS NON_US_BSLH      // <
-#define IT_GREAT LS(NON_US_BSLH) // >
 #define IT_MINUS RBKT            // -
-#define IT_UNDER LS(SLASH)       // _
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -62,6 +60,9 @@
 #define IT_CCED LS(SEMI)         // ç
 #define IT_DEG LS(APOS)          // °
 #define IT_SECT LS(NON_US_HASH)  // §
+// Row 4
+#define IT_GREAT LS(NON_US_BSLH) // >
+#define IT_UNDER LS(SLASH)       // _
 
 /* AltGr symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
