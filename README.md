@@ -2,8 +2,8 @@ This layout is inspired by [Seniply by Stevep99](https://stevep99.github.io/seni
 
 [See it in action on YouTube!](https://youtu.be/IZ83uU0ltaE)
 <div align="center">
-
-  ![sweep-layout](https://user-images.githubusercontent.com/27895007/174397568-b78af93f-28b6-4ea4-b2d0-c477770dc663.svg)
+  
+  ![sweep-layout](https://user-images.githubusercontent.com/27895007/185715593-69f9f981-ae17-4788-b2a8-d1360c65622a.svg)
 
 </div>
 
