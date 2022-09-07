@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 #include "keymap_italian.h"
 
 // Layer definitions
@@ -129,8 +130,8 @@
         // Used to change the keyboard's settings.
        		settings_layer {
 		bindings = <
-		&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
-		&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
+		&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &out OUT_USB &unstick &none &bootloader 
+		&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &out OUT_BLE &none &none &none
 		&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
           				     &none &none                         &none &none 
 		>;
