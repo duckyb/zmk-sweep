@@ -69,7 +69,7 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
+		&reset &bootloader &kp E &kp R &kp T           &kp Y &kp U  &kp I     &reset &bootloader 
 		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
 		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
              &mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
