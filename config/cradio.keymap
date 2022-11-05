@@ -447,8 +447,8 @@ symbol_layer {
 util_layer {										
 	bindings = <									
 &trans           	&bt BT_PRV       	&bt BT_NXT       	&trans           	&bt BT_CLR       	                 	&kp K_PLAY_PAUSE 	&kp C_BRI_DN     	&kp C_BRI_UP     	&trans           	&trans           
-&bt BT_SEL 0     	&bt BT_SEL 1     	&bt BT_SEL 2     	&bt BT_SEL 3     	&bt BT_SEL 4     	                 	&kp K_PP         	&kp C_PREV       	&kp C_NEXT       	&trans           	&trans           
-&trans           	&trans           	&trans           	&trans           	&trans           	                 	&kp C_MUTE       	&kp C_VOLUME_DOWN	&kp C_VOLUME_UP  	&trans           	&trans           
+&bt BT_SEL 0     	&bt BT_SEL 1     	&bt BT_SEL 2     	&bt BT_SEL 3     	&out OUT_BLE     	                 	&kp K_PP         	&kp C_PREV       	&kp C_NEXT       	&trans           	&trans           
+&trans           	&trans           	&trans           	&trans           	&out OUT_USB     	                 	&kp C_MUTE       	&kp C_VOLUME_DOWN	&kp C_VOLUME_UP  	&trans           	&trans           
                  	                 	                 	&trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
 >; };										
 mouse_base_layer {										
