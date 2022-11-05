@@ -440,7 +440,7 @@ number_layer {
 nav_layer {										
 	bindings = <									
 &trans                   	&trans                   	&trans                   	&macro_redo              	&kp INS                  	                         	&trans                   	&kp HOME                 	&kp UP                   	&kp END                  	&none                    
-&hm_vslow LCTRL LSHFT	&kp LSHFT                	&kp LGUI                 	&kp LALT                 	&kp DEL                  	                         	&trans                   	&kp LEFT                 	&kp DOWN                 	&kp RIGHT                	&none                    
+&hm_vslow LCTRL &macro_all	&kp LSHFT                	&kp LGUI                 	&kp LALT                 	&kp DEL                  	                         	&trans                   	&kp LEFT                 	&kp DOWN                 	&kp RIGHT                	&none                    
 &macro_undo              	&macro_cut               	&macro_copy              	&macro_paste             	&key_repeat              	                         	&trans                   	&kp PG_DN                	&kp PG_UP                	&kp END                  	&none                    
                          	                         	                         	&trans                   	&trans                   	                         	&trans                   	&trans                   	                         	                         	                         
 >; };										
