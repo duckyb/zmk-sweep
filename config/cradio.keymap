@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h> 
+#include <dt-bindings/zmk/outputs.h>
 #include "keymap_mouse.h"
 
 // Layer definitions
@@ -290,14 +291,6 @@
                     timeout-ms = <30>;
                     key-positions = <20 21 22 23>;
                     bindings = <&to DEFAULT_LONG_HM>;
-                    layers = <0 1 2>;
-                };
-
-                compatible = "zmk,combos";
-                  switch_long_hm_layer {
-                    timeout-ms = <20>;
-                    key-positions = <10 11 12 13>;
-                    bindings = <&to DEFAULT>;
                     layers = <0 1 2>;
                 };
 
