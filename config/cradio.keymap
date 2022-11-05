@@ -459,7 +459,7 @@ mouse_base_layer {
                  	                 	                 	&trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
 >; };										
 symbol_2_layer {										
-	bindings = <									
+	bindings = <		 							
 &kp GRAVE  	&kp TILDE  	&kp EXCL   	&kp AT     	&none      	           	&none      	&kp CARET  	&kp HASH   	&kp COLON  	&kp PERCENT
 &kp FSLH   	&kp LBKT   	&kp LPAR   	&kp LBRC   	&none      	           	&none      	&kp AMPS   	&kp STAR   	&kp SEMI   	&kp DOLLAR 
 &kp BSLH   	&kp RBKT   	&kp RPAR   	&kp RBRC   	&none      	           	&none      	&kp PIPE   	&none      	&none      	&none      
