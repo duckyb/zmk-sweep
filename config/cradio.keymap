@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h> 
 #include "keymap_mouse.h"
+#include "keymap_hm_speed_settings.h"
+#include "keymap_macros.h"
 
 // Layer definitions
 #define DEFAULT 0
@@ -51,35 +53,6 @@
 };
 
 
-
-/*
-* Home row speed settings 
-*/
-
-#define MEH LS(LA(LCTRL))
-
-#define hms_base 400
-#define hms_base_high_resistance_keycaps 200
-#define HMS_VVSLO (hms_base + 300)
-#define HMS_VSLO (hms_base + 100)
-#define HMS_SLOW (hms_base + 50)
-#define HMS_EXP  (hms_base + 20)
-#define HMS_MEDI (hms_base - 50)
-#define HMS_FAST (hms_base - 150)
-#define HMS_VFAS 130
-
-
-/*
-* corne 6*3
-* 0	    1	2	3	4	5			6	7	8	9	10	11
-* 12	13	14	15	16	17			18	19	20	21	22	23
-* 24	25	26	27	28	29			30	31	32	33	34	35
-* 			36	37 	38			    39	40	41
-*/
-
-/ {
-
-
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
@@ -87,64 +60,6 @@
                         then-layer = <7>;
                 };
         };
-
-        macros {
-
-            macro_undo: macro_undo {
-                compatible = "zmk,behavior-macro";
-                label = "macro_undo";
-                #binding-cells = <0>;
-                wait-ms = <0>;
-                tap-ms = <40>;
-                bindings = 
-                    <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp Z>
-                    , <&macro_release &kp LCTRL>
-                ;
-            };
-
-            macro_cut: macro_cut {
-                compatible = "zmk,behavior-macro";
-                label = "macro_cut";
-                #binding-cells = <0>;
-                wait-ms = <0>;
-                tap-ms = <40>;
-                bindings = 
-                    <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp X>
-                    , <&macro_release &kp LCTRL>
-                ;
-            };
-
-            macro_copy: macro_copy {
-                compatible = "zmk,behavior-macro";
-                label = "macro_copy";
-                #binding-cells = <0>;
-                wait-ms = <0>;
-                tap-ms = <40>;
-                bindings = 
-                    <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp C>
-                    , <&macro_release &kp LCTRL>
-                ;
-            };
-
-            macro_paste: macro_paste {
-                compatible = "zmk,behavior-macro";
-                label = "macro_paste";
-                #binding-cells = <0>;
-                wait-ms = <0>;
-                tap-ms = <40>;
-                bindings = 
-                    <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp V>
-                    , <&macro_release &kp LCTRL>
-                ;
-            };
-
-        };
-        
-
 
         behaviors {
 
@@ -369,6 +284,18 @@
         
 
         };
+
+
+/*
+* corne 6*3
+* 0	    1	2	3	4	5			6	7	8	9	10	11
+* 12	13	14	15	16	17			18	19	20	21	22	23
+* 24	25	26	27	28	29			30	31	32	33	34	35
+* 			36	37 	38			    39	40	41
+*/
+
+/ {
+
 
         keymap {
                 compatible = "zmk,keymap";
