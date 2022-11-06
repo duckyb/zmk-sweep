@@ -177,7 +177,7 @@
 
             ltm: layer_tap_mod {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS";
+                label = "mo_kp";
                 #binding-cells = <2>;
                 tapping-term-ms = <500>;
                 quick-tap-ms = <0>;
