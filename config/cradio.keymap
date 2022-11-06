@@ -249,6 +249,16 @@
                     bindings = <&kp>, <&kp>;
             };
 
+            ltms: layer_tap_mod {
+                compatible = "zmk,behavior-hold-tap";
+                label = "ltms";
+                #binding-cells = <2>;
+                tapping-term-ms = <500>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&mo>, <&kp>;
+                    };
+
             mmv_constant: mouse_mod {
                     compatible = "zmk,behavior-mouse-move";
                     label = "mouse_move_constant";
@@ -408,7 +418,7 @@
 
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_slow LCTRL A    	&hm_slow LSHFT S    	&hm_slow LGUI D     	&hm_slow LALT F     	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_slow RALT J     	&hm_slow RGUI K     	&hm_slow RSHFT L    	&hm_vfast RCTRL APOS
-&lt UTILITY Z       	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
+&ltms UTILITY Z       	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
                     	                    	                    	&lt NUMBER BSPC     	&kp LSHFT           	                    	&lt SYMBOL ENTER    	&lt NAV SPACE       	                    	                    	                    
 >; };										
 default_no_hm_layer {										
