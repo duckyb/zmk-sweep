@@ -405,7 +405,48 @@
                     bindings = <&kp TAB>;
                     layers = <0 1 2>;
                 };
-        
+
+                combo_brace_left {
+                    timeout-ms = <40>;
+                    key-positions = <1 11>;
+                    bindings = <&kp LBRC>;
+                    layers = <0 1 2>;
+                };
+
+                combo_paranthesis_left {
+                    timeout-ms = <40>;
+                    key-positions = <2 12>;
+                    bindings = <&kp LPAR>;
+                    layers = <0 1 2>;
+                };
+
+                combo_bracket_left {
+                    timeout-ms = <40>;
+                    key-positions = <3 13>;
+                    bindings = <&kp LBKT>;
+                    layers = <0 1 2>;
+                };
+
+                combo_brace_right {
+                    timeout-ms = <40>;
+                    key-positions = <8 18>;
+                    bindings = <&kp LBRC>;
+                    layers = <0 1 2>;
+                };
+
+                combo_paranthesis_right {
+                    timeout-ms = <40>;
+                    key-positions = <7 17>;
+                    bindings = <&kp LPAR>;
+                    layers = <0 1 2>;
+                };
+
+                combo_bracket_right {
+                    timeout-ms = <40>;
+                    key-positions = <6 16>;
+                    bindings = <&kp LBKT>;
+                    layers = <0 1 2>;
+                };
 
         };
 
