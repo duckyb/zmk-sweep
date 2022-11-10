@@ -186,7 +186,7 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
                     };
-            };
+            
 
             hm_exp: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
