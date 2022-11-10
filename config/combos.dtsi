@@ -150,20 +150,20 @@ combo_bracket_left {
 combo_brace_right {
     timeout-ms = <40>;
     key-positions = <8 18>;
-    bindings = <&kp LBRC>;
+    bindings = <&kp RBRC>;
     layers = <0 1 2>;
 };
 
 combo_paranthesis_right {
     timeout-ms = <40>;
     key-positions = <7 17>;
-    bindings = <&kp LPAR>;
+    bindings = <&kp RPAR>;
     layers = <0 1 2>;
 };
 
 combo_bracket_right {
     timeout-ms = <40>;
     key-positions = <6 16>;
-    bindings = <&kp LBKT>;
+    bindings = <&kp RBKT>;
     layers = <0 1 2>;
 };
