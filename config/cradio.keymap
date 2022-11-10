@@ -12,6 +12,7 @@
 #include "keymap_mouse.h"
 #include "base_configs.h"
 
+/ {
         conditional_layers {
             compatible = "zmk,conditional-layers";
             tri_layer {
