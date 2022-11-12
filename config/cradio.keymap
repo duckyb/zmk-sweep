@@ -44,41 +44,41 @@
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_slow LCTRL A    	&hm_slow LSHFT S    	&hm_slow LGUI D     	&hm_slow LALT F     	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_slow RALT J     	&hm_slow RGUI K     	&hm_slow RSHFT L    	&hm_vfast RCTRL APOS
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
-                    	                    	                    	&lt NUMBER BSPC     	&kp LSHFT           	                    	&lt SYMBOL ENTER    	&lt NAV SPACE       	                    	                    	                    
+                    	                    	                    	&lt SYMBOL BSPC     	&kp MOUSE_BASE      	                    	&lt NAV ENTER       	&lt NUMBER SPACE    	                    	                    	                    
 >; };										
 default_no_hm_layer {										
 	bindings = <									
 &kp Q           	&kp W           	&kp E           	&kp R           	&kp T           	                	&kp Y           	&kp U           	&kp I           	&kp O           	&kp P           
 &kp A           	&kp S           	&kp D           	&kp F           	&kp G           	                	&kp H           	&kp J           	&kp K           	&kp L           	&kp APOS        
 &kp Z           	&kp X           	&kp C           	&hm_vvslow MEH V	&kp B           	                	&kp N           	&hm_vvslow MEH M	&kp COMMA       	&kp DOT         	&kp FSLH        
-                	                	                	&lt NUMBER BSPC 	&kp LSHFT       	                	&lt SYMBOL ENTER	&lt NAV SPACE   	                	                	                
+                	                	                	&lt SYMBOL BSPC 	&kp MOUSE_BASE  	                	&lt NAV ENTER   	&lt NUMBER SPACE	                	                	                
 >; };		                    	                    	                    	                    	                    	                    	                    	                    	                    
 default_long_hm_layer {										
 	bindings = <									
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_vslow LCTRL A   	&hm_vslow LSHFT S   	&hm_vslow LGUI D    	&hm_vslow LALT F    	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_vslow RALT J    	&hm_vslow RGUI K    	&hm_vslow RSHFT L   	&hm_vfast RCTRL APOS
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
-                    	                    	                    	&lt NUMBER BSPC     	&kp LSHFT           	                    	&lt SYMBOL ENTER    	&lt NAV SPACE       	                    	                    	                    
+                    	                    	                    	&lt SYMBOL BSPC     	&kp MOUSE_BASE      	                    	&lt NAV ENTER       	&lt NUMBER SPACE    	                    	                    	                    
 >; };										
 number_layer {										
 	bindings = <									
-&kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
-&kp N1      	&hm LSHFT N2	&kp N3      	&kp N4      	&kp N5      	            	&kp N6      	&kp N7      	&kp N8      	&hm RSHFT N9	&kp N0      
-&kp F1      	&kp F2      	&kp F3      	&kp F4      	&kp F5      	            	&kp F6      	&kp F7      	&kp F8      	&kp F9      	&kp F10     
-            	            	            	&trans      	&trans      	            	&trans      	&trans      	            	            	            
+&kp ASTRK	&kp N7   	&kp N8   	&kp N9   	&kp PLUS 	         	&trans   	&trans   	&trans   	&trans   	&trans   
+&kp FSLH 	&kp N4   	&kp N5   	&kp N6   	&kp MINUS	         	&trans   	&trans   	&trans   	&trans   	&trans   
+&trans   	&kp N1   	&kp N2   	&kp N3   	&kp EQUAL	         	&trans   	&trans   	&kp COMMA	&kp DOT  	&kp FSLH 
+         	         	         	&kp N0   	&kp N0   	         	&trans   	&trans   	         	         	         
 >; };										
 nav_layer {										
 	bindings = <									
-&trans                    	&trans                    	&trans                    	&macro_redo               	&kp INS                   	                          	&trans                    	&kp HOME                  	&kp UP                    	&kp END                   	&none                     
-&hm_vslow LCTRL &macro_all	&kp LSHFT                 	&kp LGUI                  	&kp LALT                  	&kp DEL                   	                          	&trans                    	&kp LEFT                  	&kp DOWN                  	&kp RIGHT                 	&none                     
-&macro_undo               	&macro_cut                	&macro_copy               	&macro_paste              	&key_repeat               	                          	&trans                    	&kp PG_DN                 	&kp PG_UP                 	&kp END                   	&none                     
-                          	                          	                          	&trans                    	&trans                    	                          	&trans                    	&trans                    	                          	                          	                          
+&trans      	&trans      	&trans      	&macro_redo 	&kp INS     	            	&trans      	&kp HOME    	&kp UP      	&kp END     	&none       
+&kp LCTRL   	&kp LSHFT   	&kp LGUI    	&kp LALT    	&kp DEL     	            	&trans      	&kp LEFT    	&kp DOWN    	&kp RIGHT   	&none       
+&macro_undo 	&macro_cut  	&macro_copy 	&macro_paste	&key_repeat 	            	&trans      	&kp PG_DN   	&kp PG_UP   	&kp END     	&none       
+            	            	            	&trans      	&trans      	            	&trans      	&trans      	            	            	            
 >; };										
 symbol_layer {										
 	bindings = <									
-&kp FSLH   	&kp BSLH   	&kp LBKT   	&kp RBKT   	&none      	           	&none      	&kp CARET  	&kp HASH   	&kp COLON  	&kp PERCENT
-&kp EXCL   	&kp AT     	&kp LPAR   	&kp RPAR   	&none      	           	&none      	&kp AMPS   	&kp STAR   	&kp SEMI   	&kp DOLLAR 
-&kp GRAVE  	&kp TILDE  	&kp LBRC   	&kp RBRC   	&none      	           	&none      	&kp PIPE   	&none      	&none      	&none      
+&kp EXCL   	&kp AT     	&kp HASH   	&kp DOLLAR 	&kp PERCENT	           	&kp CARET  	&kp AMPS   	&kp STAR   	&kp COLON  	&none      
+&kp GRAVE  	&kp TILDE  	&kp FSLH   	&kp EQUAL  	&none      	           	&none      	&kp UNDER  	&kp BSLH   	&kp SEMI   	&none      
+&none      	&none      	&kp PIPE   	&none      	&none      	           	&none      	&kp PLUS   	&kp MINUS  	&kp LT     	&kp GT     
            	           	           	&trans     	&trans     	           	&trans     	&trans     	           	           	           
 >; };										
 util_layer {										
@@ -90,16 +90,16 @@ util_layer {
 >; };										
 mouse_base_layer {										
 	bindings = <									
-&mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&trans           	&mkp LCLK        	&trans           	&mkp RCLK        	&trans           
-&mwh SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&mwh SCROLL_RIGHT	                 	&trans           	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&kp LCTRL        
+&mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&trans           	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&trans           
+&mwh SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&mwh SCROLL_RIGHT	                 	&trans           	&kp RALT         	&kp RGUI         	&kp RSHFT        	&kp RCTRL        
 &trans           	&trans           	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&trans           	                 	&trans           	&trans           	&trans           	&trans           	&trans           
                  	                 	                 	&trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
 >; };										
-symbol_2_layer {										
+func_layer {										
 	bindings = <									
-&kp GRAVE  	&kp TILDE  	&kp EXCL   	&kp AT     	&none      	           	&none      	&kp CARET  	&kp HASH   	&kp COLON  	&kp PERCENT
-&kp FSLH   	&kp LBKT   	&kp LPAR   	&kp LBRC   	&none      	           	&none      	&kp AMPS   	&kp STAR   	&kp SEMI   	&kp DOLLAR 
-&kp BSLH   	&kp RBKT   	&kp RPAR   	&kp RBRC   	&none      	           	&none      	&kp PIPE   	&none      	&none      	&none      
+&kp GRAVE  	&kp TILDE  	&kp EXCL   	&kp AT     	&kp F11    	           	34*434*    	&kp CARET  	&kp HASH   	&kp COLON  	&kp PERCENT
+&kp LCTRL  	&kp LSHFT  	&kp LGUI   	&kp LALT   	&none      	           	&none      	&kp RALT   	&kp RGUI   	&kp RSHFT  	&kp RCTRL  
+&kp F1     	&kp F2     	&kp F3     	&kp F4     	&kp F5     	           	&kp F6     	&kp F7     	&kp F8     	&kp F9     	&kp F10    
            	           	           	&trans     	&trans     	           	&trans     	&trans     	           	           	           
 >; };										
 mouse_fast_layer {										
