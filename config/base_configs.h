@@ -7,7 +7,7 @@
 #define SYMBOL 5
 #define UTILITY 6
 #define MOUSE_BASE 7
-#define UTILITY_2 8
+#define FUNC 8
 #define MOUSE_FAST 9
 #define MOUSE_MEDIUM 10
 #define MOUSE_SLOW 11

@@ -77,13 +77,13 @@ nav_layer {
 symbol_layer {										
 	bindings = <									
 &kp EXCL   	&kp AT     	&kp HASH   	&kp DOLLAR 	&kp PERCENT	           	&kp CARET  	&kp AMPS   	&kp STAR   	&kp COLON  	&none      
-&kp GRAVE  	&kp TILDE  	&kp FSLH   	&kp EQUAL  	&none      	           	&none      	&kp UNDER  	&kp BSLH   	&kp SEMI   	&none      
-&none      	&none      	&kp PIPE   	&none      	&none      	           	&none      	&kp PLUS   	&kp MINUS  	&kp LT     	&kp GT     
+&kp GRAVE  	&kp TILDE  	&kp FSLH   	&kp EQUAL  	&none      	           	&none      	&kp UNDER  	&kp PIPE   	&kp SEMI   	&none      
+&none      	&none      	&kp BSLH   	&none      	&none      	           	&none      	&kp MINUS  	&kp PLUS   	&kp LT     	&kp GT     
            	           	           	&trans     	&trans     	           	&trans     	&trans     	           	           	           
 >; };										
 util_layer {										
 	bindings = <									
-&trans           	&bt BT_PRV       	&bt BT_NXT       	&trans           	&bt BT_CLR       	                 	&kp K_PLAY_PAUSE 	&kp C_BRI_DN     	&kp C_BRI_UP     	&trans           	&trans           
+&trans           	&trans           	&bt BT_PRV       	&bt BT_NXT       	&bt BT_CLR       	                 	&kp K_PLAY_PAUSE 	&kp C_BRI_DN     	&kp C_BRI_UP     	&trans           	&trans           
 &bt BT_SEL 0     	&bt BT_SEL 1     	&bt BT_SEL 2     	&bt BT_SEL 3     	&out OUT_BLE     	                 	&kp K_PP         	&kp C_PREV       	&kp C_NEXT       	&trans           	&trans           
 &trans           	&trans           	&trans           	&trans           	&out OUT_USB     	                 	&kp C_MUTE       	&kp C_VOLUME_DOWN	&kp C_VOLUME_UP  	&trans           	&trans           
                  	                 	                 	&trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
@@ -97,10 +97,10 @@ mouse_base_layer {
 >; };										
 func_layer {										
 	bindings = <									
-&kp GRAVE  	&kp TILDE  	&kp EXCL   	&kp AT     	&kp F11    	           	34*434*    	&kp CARET  	&kp HASH   	&kp COLON  	&kp PERCENT
-&kp LCTRL  	&kp LSHFT  	&kp LGUI   	&kp LALT   	&none      	           	&none      	&kp RALT   	&kp RGUI   	&kp RSHFT  	&kp RCTRL  
-&kp F1     	&kp F2     	&kp F3     	&kp F4     	&kp F5     	           	&kp F6     	&kp F7     	&kp F8     	&kp F9     	&kp F10    
-           	           	           	&trans     	&trans     	           	&trans     	&trans     	           	           	           
+&trans   	&trans   	&trans   	&trans   	&kp F11  	         	&kp F12  	&trans   	&trans   	&trans   	&trans   
+&kp LCTRL	&kp LSHFT	&kp LGUI 	&kp LALT 	&none    	         	&none    	&kp RALT 	&kp RGUI 	&kp RSHFT	&kp RCTRL
+&kp F1   	&kp F2   	&kp F3   	&kp F4   	&kp F5   	         	&kp F6   	&kp F7   	&kp F8   	&kp F9   	&kp F10  
+         	         	         	&trans   	&trans   	         	&trans   	&trans   	         	         	         
 >; };										
 mouse_fast_layer {										
 	bindings = <									
