@@ -44,21 +44,21 @@
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_slow LCTRL A    	&hm_slow LSHFT S    	&hm_slow LGUI D     	&hm_slow LALT F     	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_slow RALT J     	&hm_slow RGUI K     	&hm_slow RSHFT L    	&hm_vfast RCTRL APOS
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
-                    	                    	                    	&lt SYMBOL BSPC     	&mo MOUSE_BASE      	                    	&lt NAV ENTER       	&lt NUMBER SPACE    	                    	                    	                    
+                    	                    	                    	&lt NUMBER BSPC     	&mo MOUSE_BASE      	                    	&lt NAV ENTER       	&lt SYMBOL SPACE    	                    	                    	                    
 >; };										
 default_no_hm_layer {										
 	bindings = <									
 &kp Q           	&kp W           	&kp E           	&kp R           	&kp T           	                	&kp Y           	&kp U           	&kp I           	&kp O           	&kp P           
 &kp A           	&kp S           	&kp D           	&kp F           	&kp G           	                	&kp H           	&kp J           	&kp K           	&kp L           	&kp APOS        
 &kp Z           	&kp X           	&kp C           	&hm_vvslow MEH V	&kp B           	                	&kp N           	&hm_vvslow MEH M	&kp COMMA       	&kp DOT         	&kp FSLH        
-                	                	                	&lt NUMBER BSPC 	&kp MOUSE_BASE  	                	&lt NAV ENTER   	&lt SYMBOL SPACE	                	                	                
+                	                	                	&lt NUMBER BSPC 	&mo MOUSE_BASE  	                	&lt NAV ENTER   	&lt SYMBOL SPACE	                	                	                
 >; };		                    	                    	                    	                    	                    	                    	                    	                    	                    
 default_long_hm_layer {										
 	bindings = <									
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_vslow LCTRL A   	&hm_vslow LSHFT S   	&hm_vslow LGUI D    	&hm_vslow LALT F    	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_vslow RALT J    	&hm_vslow RGUI K    	&hm_vslow RSHFT L   	&hm_vfast RCTRL APOS
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
-                    	                    	                    	&lt SYMBOL BSPC     	&kp MOUSE_BASE      	                    	&lt NAV ENTER       	&lt NUMBER SPACE    	                    	                    	                    
+                    	                    	                    	&lt NUMBER BSPC     	&mo MOUSE_BASE      	                    	&lt NAV ENTER       	&lt SYMBOL SPACE    	                    	                    	                    
 >; };										
 number_layer {										
 	bindings = <									
@@ -136,7 +136,6 @@ number_test_layer {
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
             	            	            	&trans      	&trans      	            	&trans      	&trans      	            	            	            
-
 
          >; };											
          };
