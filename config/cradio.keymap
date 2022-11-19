@@ -27,7 +27,7 @@
         
         combos {
                 #include "combos.dtsi"
-        };
+        }; 
 
         behaviors {
             #include "def_behaviors.dtsi"
