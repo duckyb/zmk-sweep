@@ -16,7 +16,7 @@
         conditional_layers {
             compatible = "zmk,conditional-layers";
             tri_layer {
-                    if-layers = <3 4>;
+                    if-layers = <4 5>;
                     then-layer = <MOUSE_BASE>;
             };
         };
@@ -62,7 +62,7 @@ default_long_hm_layer {
 >; };										
 number_layer {										
 	bindings = <									
-&none    	         	&kp FSLH 	&kp ASTRK	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&none    
+&none    	&kp COMMA	&kp FSLH 	&kp ASTRK	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&none    
 &none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&none    
 &none    	&none    	&kp MINUS	&kp PLUS 	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&none    
          	         	         	&trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
@@ -136,6 +136,7 @@ number_test_layer {
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
             	            	            	&trans      	&trans      	            	&trans      	&trans      	            	            	            
+
 
          >; };											
          };
