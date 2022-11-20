@@ -40,32 +40,31 @@
     default_layer {
                 bindings = <
 
-
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_slow LCTRL A    	&hm_slow LSHFT S    	&hm_slow LGUI D     	&hm_slow LALT F     	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_slow RALT J     	&hm_slow RGUI K     	&hm_slow RSHFT L    	&hm_vfast RCTRL APOS
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
-                    	                    	                    	&lt SYMBOL BSPC     	&mo FUNC            	                    	&lt NUMBER ENTER    	&lt NAV SPACE       	                    	                    	                    
+                    	                    	                    	&lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
 >; };										
 default_no_hm_layer {										
 	bindings = <									
 &kp Q           	&kp W           	&kp E           	&kp R           	&kp T           	                	&kp Y           	&kp U           	&kp I           	&kp O           	&kp P           
 &kp A           	&kp S           	&kp D           	&kp F           	&kp G           	                	&kp H           	&kp J           	&kp K           	&kp L           	&kp APOS        
 &kp Z           	&kp X           	&kp C           	&hm_vvslow MEH V	&kp B           	                	&kp N           	&hm_vvslow MEH M	&kp COMMA       	&kp DOT         	&kp FSLH        
-                	                	                	&lt SYMBOL BSPC 	&mo FUNC        	                	&lt NUMBER ENTER	&lt NAV SPACE   	                	                	                
+                	                	                	&lt SYMBOL BSPC 	&mo NUMBER      	                	&lt FUNC ENTER  	&lt NAV SPACE   	                	                	                
 >; };		                    	                    	                    	                    	                    	                    	                    	                    	                    
 default_long_hm_layer {										
 	bindings = <									
 &kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
 &hm_vslow LCTRL A   	&hm_vslow LSHFT S   	&hm_vslow LGUI D    	&hm_vslow LALT F    	&hm_vvslow ESC G    	                    	&hm_vvslow ESC H    	&hm_vslow RALT J    	&hm_vslow RGUI K    	&hm_vslow RSHFT L   	&hm_vfast RCTRL APOS
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
-                    	                    	                    	&lt SYMBOL BSPC     	&mo FUNC            	                    	&lt NUMBER ENTER    	&lt NAV SPACE       	                    	                    	                    
+                    	                    	                    	&lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
 >; };										
 number_layer {										
 	bindings = <									
-&none    	&kp N7   	&kp N8   	&kp N9   	&trans   	         	&trans   	&kp FSLH 	&kp ASTRK	&kp COMMA	&none    
-&none    	&kp N4   	&kp N5   	&kp N6   	&trans   	         	&trans   	&kp UNDER	&kp EQUAL	&kp DOT  	&none    
-&none    	&kp N1   	&kp N2   	&kp N3   	&trans   	         	&trans   	&kp MINUS	&kp PLUS 	&none    	&none    
-         	         	         	&kp N0   	&kp N0   	         	&trans   	&trans   	         	         	         
+&none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&none    
+&none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&none    
+&none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&none    
+         	         	         	&trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
 >; };										
 nav_layer {										
 	bindings = <									
@@ -136,6 +135,7 @@ number_test_layer {
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
             	            	            	&trans      	&trans      	            	&trans      	&trans      	            	            	            
+
 
          >; };											
          };
