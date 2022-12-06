@@ -59,19 +59,19 @@ default_long_hm_layer {
 &ltms UTILITY Z     	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
                     	                    	                    	&lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
 >; };										
-number_layer {										
-	bindings = <									
-&none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&kp N0   
-&none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&kp N0   
-&none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&kp N0   
-         	         	         	&trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
->; };										
 symbol_layer {										
 	bindings = <									
 &kp EXCL        	&kp AT          	&kp HASH        	&kp DOLLAR      	&kp PERCENT     	                	&kp CARET       	&kp AMPS        	&kp STAR        	&kp PIPE        	&none           
 &none           	&kp GRAVE       	&kp SEMI        	&lt NUMBER COLON	&mo NUMBER           	                	&none           	&kp UNDER       	&kp EQUAL       	&kp COMMA       	&none           
 &none           	&kp TILDE       	&kp FSLH        	&kp BSLH        	&none           	                	&none           	&kp MINUS       	&kp PLUS        	&kp DOT         	&none           
                 	                	                	&trans          	&trans          	                	&trans          	&trans          	                	                	                
+>; };										
+number_layer {										
+	bindings = <									
+&none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&kp N0   
+&none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&kp N0   
+&none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&kp N0   
+         	         	         	&trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
 >; };										
 nav_layer {										
 	bindings = <									
