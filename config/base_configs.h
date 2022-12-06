@@ -3,8 +3,8 @@
 #define DEFAULT_NO_HM 1
 #define DEFAULT_LONG_HM 2
 #define NUMBER 3
-#define NAV 4
-#define SYMBOL 5
+#define SYMBOL 4
+#define NAV 5
 #define UTILITY 6
 #define MOUSE_BASE 7
 #define FUNC 8
