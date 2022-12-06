@@ -76,7 +76,7 @@ nav_layer {
 symbol_layer {										
 	bindings = <									
 &kp EXCL        	&kp AT          	&kp HASH        	&kp DOLLAR      	&kp PERCENT     	                	&kp CARET       	&kp AMPS        	&kp STAR        	&kp PIPE        	&none           
-&none           	&kp GRAVE       	&kp SEMI        	&lt SYMBOL COLON	&none           	                	&none           	&kp UNDER       	&kp EQUAL       	&kp COMMA       	&none           
+&none           	&kp GRAVE       	&kp SEMI        	&lt NUMBER COLON	&none           	                	&none           	&kp UNDER       	&kp EQUAL       	&kp COMMA       	&none           
 &none           	&kp TILDE       	&kp FSLH        	&kp BSLH        	&none           	                	&none           	&kp MINUS       	&kp PLUS        	&kp DOT         	&none           
                 	                	                	&trans          	&trans          	                	&trans          	&trans          	                	                	                
 >; };										
