@@ -19,6 +19,10 @@
                     if-layers = <SYMBOL NAV>;
                     then-layer = <MOUSE_BASE>;
             };
+			second_tri_layer {
+                    if-layers = <SYMBOL NUMBER>;
+                    then-layer = <NUMBER>;
+            };
         };
 
         macros {
