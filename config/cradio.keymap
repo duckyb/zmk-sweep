@@ -47,10 +47,10 @@
 >; };										
 default_no_hm_layer {										
 	bindings = <									
-&kp Q           	&kp W           	&kp E           	&kp R           	&kp T           	                	&kp Y           	&kp U           	&kp I           	&kp O           	&kp P           
-&kp A           	&kp S           	&kp D           	&kp F           	&kp G           	                	&kp H           	&kp J           	&kp K           	&kp L           	&kp APOS        
-&kp Z           	&kp X           	&kp C           	&hm_vvslow MEH V	&kp B           	                	&kp N           	&hm_vvslow MEH M	&kp COMMA       	&kp DOT         	&kp FSLH        
-                	                	                	&lt SYMBOL BSPC 	&mo NUMBER      	                	&lt FUNC ENTER  	&lt NAV SPACE   	                	                	                
+&kp Q               	&kp W               	&kp E               	&kp R               	&kp T               	                    	&kp Y               	&kp U               	&kp I               	&kp O               	&kp P               
+&hm_slow LCTRL A    	&kp S               	&kp D               	&kp F               	&kp G               	                    	&kp H               	&kp J               	&kp K               	&kp L               	&hm_vfast RCTRL APOS
+&kp Z               	&kp X               	&kp C               	&hm_vvslow MEH V    	&kp B               	                    	&kp N               	&hm_vvslow MEH M    	&kp COMMA           	&kp DOT             	&kp FSLH            
+                    	                    	                    	&lt SYMBOL BSPC     	&mo NUMBER          	                    	&lt FUNC ENTER      	&lt NAV SPACE       	                    	                    	                    
 >; };		                    	                    	                    	                    	                    	                    	                    	                    	                    
 default_long_hm_layer {										
 	bindings = <									
@@ -61,9 +61,9 @@ default_long_hm_layer {
 >; };										
 number_layer {										
 	bindings = <									
-&none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&none    
-&none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&none    
-&none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&none    
+&none    	&kp COMMA	&kp ASTRK	&kp FSLH 	&trans   	         	&trans   	&kp N7   	&kp N8   	&kp N9   	&kp N0   
+&none    	&kp DOT  	&kp EQUAL	&kp UNDER	&trans   	         	&trans   	&kp N4   	&kp N5   	&kp N6   	&kp N0   
+&none    	&none    	&kp PLUS 	&kp MINUS	&trans   	         	&trans   	&kp N1   	&kp N2   	&kp N3   	&kp N0   
          	         	         	&trans   	&trans   	         	&kp N0   	&kp N0   	         	         	         
 >; };										
 nav_layer {										
@@ -91,13 +91,13 @@ mouse_base_layer {
 	bindings = <									
 &mkp MCLK        	&mkp RCLK        	&mmv MOVE_UP     	&mkp LCLK        	&kp K_CMENU      	                 	&trans           	&mkp LCLK        	&trans           	&mkp RCLK        	&trans           
 &mwh SCROLL_LEFT 	&mmv MOVE_LEFT   	&mmv MOVE_DOWN   	&mmv MOVE_RIGHT  	&mwh SCROLL_RIGHT	                 	&trans           	&kp RALT         	&kp RGUI         	&kp RSHFT        	&kp RCTRL        
-&trans           	&trans           	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&trans           	                 	&trans           	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&trans           
+&trans           	&mwh SCROLL_LEFT 	&mwh SCROLL_UP   	&mwh SCROLL_DOWN 	&mwh SCROLL_RIGHT	                 	&trans           	&mo MOUSE_CRAWL  	&mo MOUSE_SLOW   	&mo MOUSE_MEDIUM 	&trans           
                  	                 	                 	&trans           	&trans           	                 	&trans           	&trans           	                 	                 	                 
 >; };										
 func_layer {										
 	bindings = <									
 &kp F11  	&kp F12  	&kp F13  	&kp F14  	&kp F15  	         	&kp F16  	&kp F17  	&kp F18  	&kp F19  	&kp F20  
-&kp LCTRL	&kp LSHFT	&kp LGUI 	&kp LALT 	&none    	         	&none    	&kp RALT 	&kp RGUI 	&kp RSHFT	&kp RCTRL
+&kp LCTRL	&kp LSHFT	&kp LGUI 	&kp LALT 	&kp ESC  	         	&kp ESC  	&kp RALT 	&kp RGUI 	&kp RSHFT	&kp RCTRL
 &kp F1   	&kp F2   	&kp F3   	&kp F4   	&kp F5   	         	&kp F6   	&kp F7   	&kp F8   	&kp F9   	&kp F10  
          	         	         	&trans   	&trans   	         	&trans   	&trans   	         	         	         
 >; };										
@@ -135,7 +135,6 @@ number_test_layer {
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
 &kp DOT     	&kp COMMA   	&kp ASTRK   	&kp FSLH    	&kp F11     	            	&kp F12     	&kp PLUS    	&kp MINUS   	&kp UNDER   	&kp EQUAL   
             	            	            	&trans      	&trans      	            	&trans      	&trans      	            	            	            
-
 
          >; };											
          };
