@@ -1,4 +1,4 @@
-        #include "base_configs.h"
+
 
             hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
@@ -8,7 +8,7 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-                    };
+            };
             
 
             hm_exp: homerow_mods {
@@ -19,7 +19,7 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-                };
+            };
             
             hm_vvslow: homerow_mods {
                     compatible = "zmk,behavior-hold-tap";
