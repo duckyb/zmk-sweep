@@ -70,6 +70,16 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
             };
+
+			hm_slow: homerow_mods {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HOMEROW_MODS";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <HMS_SLOW>;
+                    quick-tap-ms = <0>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>, <&kp>;
+            };
             
             hm_fast: homerow_mods {
                     compatible = "zmk,behavior-hold-tap";
