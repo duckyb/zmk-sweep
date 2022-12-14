@@ -20,7 +20,7 @@
 };
 
 &lt {
-    tapping-term-ms = <800>;
+    tapping-term-ms = <130>;
 };
 
 &mmv {
