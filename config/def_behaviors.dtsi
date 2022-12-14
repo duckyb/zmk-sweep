@@ -44,7 +44,7 @@
                     compatible = "zmk,behavior-hold-tap";
                     label = "HOMEROW_MODS";
                     #binding-cells = <2>;
-                    tapping-term-ms = <HMS_SLOW>;
+                    tapping-term-ms = <800>;
                     quick-tap-ms = <0>;
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;

@@ -48,7 +48,7 @@
 #define hms_base 500
 #define HMS_VVSLO (hms_base + 300)
 #define HMS_VSLO (hms_base + 100)
-#define HMS_SLOW 800
+#define HMS_SLOW (hms_base + 50)
 #define HMS_EXP  (hms_base + 20)
 #define HMS_MEDI (hms_base - 50)
 #define HMS_FAST (hms_base - 150)
