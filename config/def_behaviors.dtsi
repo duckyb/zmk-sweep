@@ -1,4 +1,4 @@
-
+#include "base_configs.h"
 
             hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
