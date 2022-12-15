@@ -215,7 +215,7 @@ mouse_fast_layer {
 &mwh SCROLL_LEFT_FAST        	&mmv_constant MOVE_LEFT_FAST 	&mmv_constant MOVE_DOWN_FAST 	&mmv_constant MOVE_RIGHT_FAST	&mwh SCROLL_RIGHT_FAST       	                             	&trans                       	&kp RALT                     	&kp RGUI                     	&kp RSHFT                    	&kp RCTRL                    
 &trans                       	&trans                       	&mwh SCROLL_UP_FAST          	&mwh SCROLL_DOWN_FAST        	&trans                       	                             	&trans                       	&mo MOUSE_CRAWL              	&mo MOUSE_SLOW               	&mo MOUSE_MEDIUM             	&trans                       
                              	                             	                             	&trans                       	&trans                       	                             	&trans                       	&trans                       	                             	                             	                             
->; };										
+>; };								 		
 mouse_med_layer {										
 	bindings = <									
 &mkp MCLK                      	&mkp RCLK                      	&mmv_constant MOVE_UP_MEDIUM   	&mkp LCLK                      	&kp K_CMENU                    	                               	&trans                         	&mkp LCLK                      	&trans                         	&mkp RCLK                      	&trans                         
