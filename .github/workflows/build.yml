@@ -10,10 +10,10 @@ jobs:
     name: Build
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Cache west modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-zephyr-modules
         with:
@@ -48,7 +48,7 @@ jobs:
         run: cp build/zephyr/zmk.uf2 cradio_left_nice_nano_v2.uf2
 
       - name: Archive (Cradio/Sweep Left)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: firmware-zmk-sweep
           path: cradio_left_nice_nano_v2.uf2
@@ -63,7 +63,7 @@ jobs:
         run: cp build/zephyr/zmk.uf2 cradio_right_nice_nano_v2.uf2
 
       - name: Archive (Cradio/Sweep Right)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: firmware-zmk-sweep
           path: cradio_right_nice_nano_v2.uf2
