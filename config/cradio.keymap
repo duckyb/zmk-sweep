@@ -141,4 +141,4 @@
     };
 };
 
-# vim: filetype=devicetree
+// vim: filetype=devicetree
