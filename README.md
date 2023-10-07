@@ -1,5 +1,5 @@
-**[Sweep v2.2](https://github.com/davidphilipbarr/Sweep/tree/main/Sweep%20v2.2) order details**
-1. nice!nao v2
+My [Sweep v2.2](https://github.com/davidphilipbarr/Sweep/tree/main/Sweep%20v2.2)
+1. nice!nano v2
 1. Kalih Choc Brown (Tactile) V1
 1. MBK Black Blank
 
