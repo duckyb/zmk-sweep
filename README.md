@@ -1,12 +1,13 @@
-* Sweep v2.2 (34 keys) order details
-#   nice!nao v2
-#   Kalih Choc Brown (Tactile) V1
-#   MBK Black Blank
+**[Sweep v2.2](https://github.com/davidphilipbarr/Sweep/tree/main/Sweep%20v2.2) order details**
+1. nice!nao v2
+1. Kalih Choc Brown (Tactile) V1
+1. MBK Black Blank
 
 Capable of both wired and wireless operation
 
 Kit ordered at [beekeep](https://shop.beekeeb.com/product/ferris-sweep-keyboard-diy-kit/)
 
+_needs update_
 [See it in action on YouTube!](https://youtu.be/IZ83uU0ltaE)
 <div align="center">
   
